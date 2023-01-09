@@ -6,15 +6,21 @@ package com.javarush.task.pro.task04.task0405;
 
 public class Solution {
     public static void main(String[] args) {
-        int high = 0;
-        while (high < 10){
-            int length = 0;
-            System.out.println();
-            high++;
-            while (length < 20){
-                System.out.print("Б");
-                length++;
+        int height = 0;
+        while (height < 10){
+            int width = 0;
+            while (width < 20){
+                if (height == 0 || height == 9){
+                    System.out.print("Б");
+                    } else if (width == 0 || width == 19) {
+                    System.out.print("Б");
+                } else {
+                    System.out.print(" ");
+                }
+                width++;
             }
+            System.out.println();
+            height++;
         }
 
     }
