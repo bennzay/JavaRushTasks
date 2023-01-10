@@ -9,7 +9,10 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner bombInterface = new Scanner(System.in);
-
-        //напишите тут ваш код
+        int input;
+        do {
+            input = bombInterface.nextInt();
+            System.out.println(input);
+        }while (input % 10 != 0 );
     }
 }
