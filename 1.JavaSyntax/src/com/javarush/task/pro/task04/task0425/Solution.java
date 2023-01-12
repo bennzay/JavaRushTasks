@@ -16,14 +16,14 @@ public class Solution {
         for (int h = 0; h < 10; h++) {
             for (int w = 0; w < 11; w++) {
                 if (h == 9 && w < 10) {
-                    System.out.print(bug);
+                    System.out.print(death);
                 } else if (h < 9 && w < 3) {
                     System.out.print(land);
-                } else if (h < 8 && w == 3) {
+                } else if (h < 9 && w == 3) {
                     System.out.print(hole);
-                } else if (h == 8 && w == 3) {
-                    System.out.print(robot);
-                } else if (h < 9 && w > 3 && w < 10) {
+                } //else if (h == 8 && w == 3) {
+                    //System.out.print(robot);
+                 else if (h < 9 && w > 3 && w < 10) {
                     System.out.print(land);
                 } //else if (h > 0 && h < 9 && w < 10) {
                     //System.out.print(land);
