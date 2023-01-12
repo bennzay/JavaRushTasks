@@ -17,15 +17,17 @@ public class Solution {
             for (int w = 0; w < 11; w++) {
                 if (h == 9 && w < 10) {
                     System.out.print(bug);
-                } else if (h == 0 && w < 3) {
+                } else if (h < 9 && w < 3) {
                     System.out.print(land);
-                } else if (h == 0 && w == 3) {
+                } else if (h < 8 && w == 3) {
+                    System.out.print(hole);
+                } else if (h == 8 && w == 3) {
                     System.out.print(robot);
-                } else if (h == 0 && w > 3 && w < 10) {
+                } else if (h < 9 && w > 3 && w < 10) {
                     System.out.print(land);
-                } else if (h > 0 && h < 9 && w < 10) {
-                    System.out.print(land);
-                } else if (w == 10 && h < 10) {
+                } //else if (h > 0 && h < 9 && w < 10) {
+                    //System.out.print(land);
+                 else if (w == 10 && h < 10) {
                     System.out.println();
                 }
             }
