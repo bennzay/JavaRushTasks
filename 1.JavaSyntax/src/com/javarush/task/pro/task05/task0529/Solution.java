@@ -17,7 +17,7 @@ public class Solution {
 
     public static void main(String[] args) {
         for (int i = 0; i < bombs.length; i++) {
-            Arrays.fill(bombs[i], 1, 11, 1);
+            Arrays.fill(bombs[i], 0, 10, 1);
         }
         for (int i = 0; i < field.length; i++) {
             Arrays.fill(field[i], empty);
@@ -25,6 +25,43 @@ public class Solution {
         for (int i = 0; i < field.length; i++) {
             int j = (int) (Math.random() * 30);
             field[i][j] = robotank;
+        }
+
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                if (field[i][j] == robotank && bombs[i][j] == 1) {
+                    field[i][j] = hit;
+                }
+            }
+        }
+
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                if (field[i][j] == robotank){
+                    for (int k = 0; k < bombs.length; k++) {
+                        Arrays.fill(bombs[k], 0);
+                        Arrays.fill(bombs[k], 10, 20, 1);
+                    }
+                }
+            }
+        }
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                if (field[i][j] == robotank && bombs[i][j] == 1) {
+                    field[i][j] = hit;
+                }
+            }
+        }
+
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                if (field[i][j] == robotank){
+                    for (int k = 0; k < bombs.length; k++) {
+                        Arrays.fill(bombs[k], 0);
+                        Arrays.fill(bombs[k], 20, 30, 1);
+                    }
+                }
+            }
         }
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
