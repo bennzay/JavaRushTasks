@@ -12,9 +12,10 @@ public class Solution {
     public static int element = 5;
 
     public static void main(String[] args) {
-        Arrays.sort(array);
-        int index5 = Arrays.binarySearch(array, element);
-        if (index5 >0) {
+        int[] copy = Arrays.copyOf(array, array.length);
+        Arrays.sort(copy);
+        int index = Arrays.binarySearch(copy, element);
+        if (index >=0) {
             System.out.println("true");
         }else {
             System.out.println("false");
