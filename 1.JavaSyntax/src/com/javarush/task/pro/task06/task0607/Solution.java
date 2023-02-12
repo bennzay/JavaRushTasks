@@ -7,7 +7,7 @@ package com.javarush.task.pro.task06.task0607;
 public class Solution {
 
     public static void main(String[] args) {
-        signIn("Sanya");
+
     }
 
     public static void signIn(String username){
