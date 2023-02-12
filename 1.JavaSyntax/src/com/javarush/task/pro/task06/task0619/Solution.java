@@ -6,11 +6,15 @@ package com.javarush.task.pro.task06.task0619;
 
 public class Solution {
     public static String[] deadMen = {"мертвец_1", "мертвец_2", "мертвец_3", "мертвец_4", "мертвец_5",
-                                      "мертвец_6", "мертвец_7", "мертвец_8", "мертвец_9", "мертвец_10"};
+            "мертвец_6", "мертвец_7", "мертвец_8", "мертвец_9", "мертвец_10"};
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        for (int i = 0; i < deadMen.length; i++) {
+            System.out.println(destroyDeadMan(deadMen[i]));
+        }
     }
 
-    //напишите тут ваш код
+    public static String destroyDeadMan(String nameDeadMen) {
+        return nameDeadMen + " был уничтожен";
+    }
 }
