@@ -38,3 +38,5 @@ public class Solution {
         for (int i : array) {
             System.out.print(i + " ");
         }
+    }
+}
