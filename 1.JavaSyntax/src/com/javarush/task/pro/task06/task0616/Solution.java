@@ -16,4 +16,5 @@ public class Solution {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
 }
